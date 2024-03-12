@@ -1,0 +1,1 @@
+# printful-api-model
