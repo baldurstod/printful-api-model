@@ -2,5 +2,8 @@ package model
 
 type VariantResponse struct {
 	Success bool `json:"success"`
-	Variant `json:"variant"`
+	Result  struct {
+		Variant `json:"variant"`
+		Product `json:"product"`
+	} `json:"result"`
 }
