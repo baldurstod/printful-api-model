@@ -1,12 +1,12 @@
 package model
 
 type SyncVariant struct {
-	ID                        int               `json:"id" bson:"id"`
+	ID                        int64             `json:"id" bson:"id"`
 	ExternalID                string            `json:"external_id" bson:"external_id"`
-	SyncProductID             int               `json:"sync_product_id" bson:"sync_product_id"`
+	SyncProductID             int64             `json:"sync_product_id" bson:"sync_product_id"`
 	Name                      string            `json:"name" bson:"name"`
 	Synced                    bool              `json:"synced" bson:"synced"`
-	VariantID                 int               `json:"variant_id" bson:"variant_id"`
+	VariantID                 int64             `json:"variant_id" bson:"variant_id"`
 	RetailPrice               string            `json:"retail_price" bson:"retail_price"`
 	Currency                  string            `json:"currency" bson:"currency"`
 	IsIgnored                 bool              `json:"is_ignored" bson:"is_ignored"`

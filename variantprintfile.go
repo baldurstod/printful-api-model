@@ -1,6 +1,6 @@
 package model
 
 type VariantPrintfile struct {
-	VariantID  int         `json:"variant_id" bson:"variant_id"`
+	VariantID  int64       `json:"variant_id" bson:"variant_id"`
 	Placements interface{} `json:"placements" bson:"placements"`
 }
