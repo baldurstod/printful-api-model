@@ -9,7 +9,7 @@ type PrintfileInfo struct {
 	Options             []string           `json:"options" bson:"options"`
 }
 
-func (printfileInfo PrintfileInfo) GetPrintfile(variantID int, placement string) *Printfile {
+func (printfileInfo PrintfileInfo) GetPrintfile(variantID int64, placement string) *Printfile {
 	for _, v := range printfileInfo.VariantPrintfiles {
 		if v.VariantID == variantID {
 
@@ -19,7 +19,7 @@ func (printfileInfo PrintfileInfo) GetPrintfile(variantID int, placement string)
 			}
 
 			for _, p := range printfileInfo.Printfiles {
-				if p.PrintfileID == int(printfileID.(float64)) {
+				if p.PrintfileID == int64(printfileID.(float64)) {
 					return &p
 				}
 			}
