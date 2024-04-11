@@ -1,8 +1,8 @@
 package model
 
 type Variant struct {
-	ID                  int64                `json:"id" bson:"id"`
-	ProductID           int64                `json:"product_id" bson:"product_id"`
+	ID                  int                  `json:"id" bson:"id"`
+	ProductID           int                  `json:"product_id" bson:"product_id"`
 	Name                string               `json:"name" bson:"name"`
 	Size                string               `json:"size" bson:"size"`
 	Color               string               `json:"color" bson:"color"`

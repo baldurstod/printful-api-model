@@ -1,7 +1,7 @@
 package model
 
 type SyncProduct struct {
-	ID           int64  `json:"id" bson:"id"`
+	ID           int    `json:"id" bson:"id"`
 	ExternalID   string `json:"external_id" bson:"external_id"`
 	Name         string `json:"name" bson:"name"`
 	Variants     int    `json:"variants" bson:"variants"`

@@ -1,11 +1,11 @@
 package model
 
 type TemplateById struct {
-	ID                  int64         `json:"id" bson:"id"`
-	ProductID           int64         `json:"product_id" bson:"product_id"`
-	ExternalProductID   int64         `json:"external_product_id" bson:"external_product_id"`
+	ID                  int           `json:"id" bson:"id"`
+	ProductID           int           `json:"product_id" bson:"product_id"`
+	ExternalProductID   int           `json:"external_product_id" bson:"external_product_id"`
 	Title               string        `json:"title" bson:"title"`
-	AvailableVariantIDs []int64       `json:"available_variant_ids" bson:"available_variant_ids"`
+	AvailableVariantIDs []int         `json:"available_variant_ids" bson:"available_variant_ids"`
 	OptionData          interface{}   `json:"option_data" bson:"option_data"`
 	Colors              interface{}   `json:"colors" bson:"colors"`
 	Sizes               []string      `json:"sizes" bson:"sizes"`
