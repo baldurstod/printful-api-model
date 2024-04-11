@@ -1,7 +1,7 @@
 package model
 
 type Printfile struct {
-	PrintfileID int64  `json:"printfile_id" bson:"printfile_id"`
+	PrintfileID int    `json:"printfile_id" bson:"printfile_id"`
 	Width       int    `json:"width" bson:"width"`
 	Height      int    `json:"height" bson:"height"`
 	DPI         int    `json:"dpi" bson:"dpi"`
