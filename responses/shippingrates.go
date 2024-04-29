@@ -5,6 +5,6 @@ import (
 )
 
 type ShippingRates struct {
-	Code   string         `json:"code" bson:"code" mapstructure:"code"`
+	Code   int                    `json:"code" bson:"code" mapstructure:"code"`
 	Result []schemas.ShippingInfo `json:"result" bson:"result" mapstructure:"result"`
 }
