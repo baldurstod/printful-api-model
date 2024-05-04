@@ -5,6 +5,6 @@ import (
 )
 
 type TaxRates struct {
-	Code   int               `json:"code" bson:"code" mapstructure:"code"`
-	Result []schemas.TaxInfo `json:"result" bson:"result" mapstructure:"result"`
+	Code   int             `json:"code" bson:"code" mapstructure:"code"`
+	Result schemas.TaxInfo `json:"result" bson:"result" mapstructure:"result"`
 }
