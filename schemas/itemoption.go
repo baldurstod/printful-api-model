@@ -1,4 +1,4 @@
-package model
+package schemas
 
 type ItemOption struct {
 	ID    string `json:"id" bson:"id"`

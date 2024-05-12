@@ -1,4 +1,4 @@
-package model
+package schemas
 
 type SyncVariant struct {
 	ID                        int64             `json:"id" bson:"id"`

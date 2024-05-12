@@ -1,4 +1,4 @@
-package model
+package schemas
 
 type SyncVariantFile struct {
 	Type            string       `json:"type" bson:"type"`
