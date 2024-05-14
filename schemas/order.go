@@ -20,3 +20,13 @@ type Order struct {
 	Gift                Gift               `json:"gift" bson:"gift" mapstructure:"gift"`
 	PackingSlip         PackingSlip        `json:"packing_slip" bson:"packing_slip" mapstructure:"packing_slip"`
 }
+
+func NewOrder() Order {
+	return Order{
+		Items:            make([]Item, 0),
+		BrandingItems:    make([]Item, 0),
+		IncompleteItems:  make([]IncompleteItem, 0),
+		PricingBreakdown: make([]PricingBreakdown, 0),
+		Shipment:         make([]Shipment, 0),
+	}
+}
