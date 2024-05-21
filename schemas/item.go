@@ -20,3 +20,10 @@ type Item struct {
 	Discontinued              bool           `json:"discontinued" bson:"discontinued" mapstructure:"discontinued"`
 	OutOfStock                bool           `json:"out_of_stock" bson:"out_of_stock" mapstructure:"out_of_stock"`
 }
+
+func NewItem() Item {
+	return Item{
+		Files:   make([]File, 0),
+		Options: make([]Option, 0),
+	}
+}
