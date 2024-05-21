@@ -10,7 +10,7 @@ type Item struct {
 	ProductTemplateID         int64          `json:"product_template_id,omitempty" bson:"product_template_id" mapstructure:"product_template_id"`
 	ExternalProductID         string         `json:"external_product_id,omitempty" bson:"external_product_id" mapstructure:"external_product_id"`
 	Quantity                  int            `json:"quantity" bson:"quantity" mapstructure:"quantity"`
-	Price                     string         `json:"price" bson:"price" mapstructure:"price"`
+	Price                     float64        `json:"price" bson:"price" mapstructure:"price"`
 	RetailPrice               string         `json:"retail_price" bson:"retail_price" mapstructure:"retail_price"`
 	Name                      string         `json:"name" bson:"name" mapstructure:"name"`
 	Product                   ProductVariant `json:"product" bson:"product" mapstructure:"product"`
