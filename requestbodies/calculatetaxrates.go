@@ -5,5 +5,5 @@ import (
 )
 
 type CalculateTaxRates struct {
-	Recipient TaxAddressInfo `json:"recipient" bson:"recipient" mapstructure:"recipient"`
+	Recipient schemas.TaxAddressInfo `json:"recipient" bson:"recipient" mapstructure:"recipient"`
 }
